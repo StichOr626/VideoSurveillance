@@ -1,0 +1,14 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="VideoSurveillance.MainWindow"
+        Title="Система видеонаблюдения" WindowState="Maximized" WindowStyle="None" av:DesignHeight="280.8" av:DesignWidth="433.6">
+    <Grid>
+        <ComboBox x:Name="CameraList" HorizontalAlignment="Left" Margin="10,10,0,0" Width="200" VerticalAlignment="Top"/>
+        <Button Content="Добавить Камеру" HorizontalAlignment="Left" Margin="220,10,0,0" Width="40" Click="Start_Click" Height="20" VerticalAlignment="Top"/>
+        <Button Content="Остановить Все" HorizontalAlignment="Left" Margin="350,10,0,0" Width="50" Click="Stop_Click" Height="20" VerticalAlignment="Top"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10,50,10,10">
+            <WrapPanel x:Name="VideoPanel" />
+        </ScrollViewer>
+    </Grid>
+</Window>
