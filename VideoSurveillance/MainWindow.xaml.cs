@@ -89,5 +89,10 @@ namespace VideoSurveillance
 
         [DllImport("gdi32.dll")]
         public static extern bool DeleteObject(IntPtr hObject);
+
+        private void Button_exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
